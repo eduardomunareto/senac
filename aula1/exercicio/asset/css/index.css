@@ -1,18 +1,25 @@
 :root {
   --cor-fundo: #cccc;
-  --cor-fundo-div: #dddd;
+  --cor-fundo-div: rgba(214, 240, 180, 0.867);
   --cor-fundo-main: rgb(163, 241, 255);
   --cor-fundo-article: rgb(145, 187, 194);
   --cor-fundo-objetos: rgba(255, 255, 255, 1.2);
-
 }
 
+* {
+  margin: 0px 0px 0px 0px;
+}
 
 main {
+  transition: width 2s;
   background-color: var(--cor-fundo-main);
   width: 30%;
   margin-left: 37%;
   border-radius: 20px;
+}
+
+main:hover {
+  width: 40%;
 }
 
 body {
@@ -25,8 +32,13 @@ img {
   text-align: left
 }
 
+header {
+  background-color: rgb(255, 203, 169);
+}
+
 ul {
-  padding: 10px;
+  padding: 30px;
+  margin-left: 50px;
 }
 
 li {
@@ -40,27 +52,32 @@ li {
 
 li:hover {
   background-color: var(--cor-fundo);
+  box-shadow: 1px 1px 1px 2px gray;
 }
 
 section {
-  padding: 50px;
+  padding: 40px;
   background-color: var(--cor-fundo-div);
   text-align: center;
 }
 
 h1,
 h3 {
+  color: rgb(3, 119, 119);
   margin-left: 3%;
+  padding: 20px;
 }
+
 
 footer {
   margin-left: 5%;
+  background: rgb(193, 193, 255);
 }
 
 article {
-  padding: 40px;
+  padding: 20px;
   margin: 5px;
-  border: 1px solid white;
+  border: 5px solid white;
   background-color: var(--cor-fundo-article);
   width: 30%;
   margin-left: 35%;
@@ -75,9 +92,7 @@ img {
   padding: 10px;
 }
 
-section {
-  margin-top: 40px;
-}
+
 
 figcaption {
   display: none;
